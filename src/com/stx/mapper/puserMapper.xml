@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace：必须与对应的接口全类名一致
+	id:必须与对应接口的某个对应的方法名一致
+	mybatis 动态sql
+	https://www.w3cschool.cn/mybatis/l5cx1ilz.html
+ -->
+<mapper namespace="com.stx.mapper.PuserMapper">
+	<insert id="save" parameterType="PuserEntity">
+		insert into puser values(#{id},#{zh},#{pass},#{realname},#{address},#{phone},#{flag})
+	</insert>
+	<select id="login" parameterType="PuserEntity" resultType="PuserEntity">
+		select * from puser where flag='0' and zh=#{zh}  and pass=#{pass}
+	</select>
+	<select id="checkUser" parameterType="String" resultType="PuserEntity">
+		select * from puser where zh=#{zh}
+	</select>
+	
+	<select id="getCount" resultType="int">
+		select count(*) from puser
+	</select>
+	<select id="select" parameterType="Map" resultType="PuserEntity">
+		select * from
+		 (select  ROWNUM num,m.* from puser m) t 
+		where num> #{start} and num &lt;=#{end} 
+	</select>
+
+	<select id="getBeanById" parameterType="String" resultType="PuserEntity">
+		select * from puser where id=#{id}
+	</select>
+	
+	<update id="update" parameterType="PuserEntity">
+		update puser 
+		set zh=#{zh},pass=#{pass},realname=#{realname},address=#{address},phone=#{phone} where id=#{id}
+	</update>
+	
+	<update id="aupdate" parameterType="PuserEntity">
+		update puser 
+		set zh=#{zh},pass=#{pass},realname=#{realname},address=#{address},phone=#{phone},flag=#{flag} where id=#{id}
+	</update>
+</mapper>
+
+
+
+
+

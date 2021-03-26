@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace：必须与对应的接口全类名一致
+	id:必须与对应接口的某个对应的方法名一致
+	mybatis 动态sql
+	https://www.w3cschool.cn/mybatis/l5cx1ilz.html
+ -->
+ 
+<mapper namespace="com.stx.mapper.MtypeMapper"><!-- 写入创建好的接口的名字 -->
+	
+	
+	
+	<select id="getCount"  resultType="int">
+	select count(*) from mtype
+	</select>
+	
+	<select id="select" parameterType="Map" resultType="MtypeEntity">
+		select * from
+		 (select  rownum num,m.* from mtype m) t 
+		 where num >#{start} and num&lt;=#{end}
+	</select>
+	
+	<select id="selectAll"  resultType="MtypeEntity">
+		select * from mtype
+	</select>
+	
+	<insert id="save" parameterType="MtypeEntity">
+		insert into mtype values(#{id},#{tname})
+	</insert>
+	
+	<delete id="delete" parameterType="String">
+		delete from mtype where id=#{id}
+	</delete>
+	
+	<select id="getBeanById" parameterType="String" resultType="MtypeEntity">
+		select * from mtype where id=#{id}
+	</select>
+	
+	<update id="update" parameterType="MtypeEntity">
+	update mtype set tname=#{tname} where id=#{id}
+	</update>
+</mapper>

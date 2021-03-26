@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace：必须与对应的接口全类名一致
+	id:必须与对应接口的某个对应的方法名一致
+	mybatis 动态sql
+	https://www.w3cschool.cn/mybatis/l5cx1ilz.html
+ -->
+<mapper namespace="com.stx.mapper.MenuMapper">
+	<select id="getCount" resultType="int">
+		select count(*) from menu
+	</select>
+	<select id="select" parameterType="Map" resultType="MenuEntity">
+		select * from
+		 (select  ROWNUM num,m.* from menu m) t 
+		where num> #{start} and num &lt;=#{end} 
+	</select>
+	<insert id="save" parameterType="MenuEntity">
+		insert into menu values(#{id},#{title},#{content},#{picpath},#{price},#{typeid})
+	</insert>
+	<delete id="delete" parameterType="String">
+		delete from menu where id=#{id}
+	</delete>
+	<select id="getBeanById" parameterType="String" resultType="MenuEntity">
+		select * from menu where id=#{id}
+	</select>
+	
+	<update id="update" parameterType="MenuEntity">
+		update menu 
+		set title=#{title},content=#{content},picpath=#{picpath},price=#{price},typeid=#{typeid}
+		where id=#{id}
+	</update>
+	
+	<select id="selectAll"  resultType="MenuEntity">
+		select * from menu
+	</select>
+	<select id="selectB" resultType="MenuEntity">
+		select * from menu where typeid='178f71c4-1530-474c-8d68-7271c24714b9'
+	</select>
+	<select id="selectC" resultType="MenuEntity">
+		select * from menu where typeid='f92c7bce-78a2-4f4f-a2f9-87f63b869d8a'
+	</select>
+	<select id="selectD" resultType="MenuEntity">
+		select * from menu where typeid='1f48669c-c08d-48c7-b3b7-635023705911'
+	</select>
+	<select id="selectE" resultType="MenuEntity">
+		select * from menu where typeid='c9939ff7-b75d-4c1e-b3c9-23c8aaeabfaf'
+	</select>
+</mapper>
+
+
+
+
+

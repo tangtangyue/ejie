@@ -1,0 +1,223 @@
+		.problem{
+			height: 30px;
+			background-color: #808080; 
+			/* border: 1px solid black; */
+		}
+		.problem .wel{
+			height: 20px;
+			width: 300px;
+			/* border: 1px solid red; */
+			margin-left: 740px;
+			margin-top: 9px;
+			float: left;
+		}
+		.problem .wel span{
+			font-size: 12px;
+			float: right;
+			padding-top: 4px;
+			color: #fff;
+		}
+		.problem .often{
+			height: 20px;
+			width: 100px;
+			/* border: 1px solid red; */ 
+			float: left;
+			margin-left: 5px;
+			margin-top: 9px; 
+		}
+		.problem .often a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #fff;
+		}
+		.problem .often a:hover{
+			text-decoration: underline;
+		}
+		.paylogo{
+			height: 60px;
+			/* border: 1px solid red; */
+		}
+		.paylogo .picture{
+			width: 150px;
+			height: 60px;
+			/* border: 1px solid red; */
+			float: left;
+			margin-left: 355px;
+		}
+		.paylogo img{
+			height: 60px;	
+		}
+		.paylogo .cash{
+			height: 40px;
+			width: 200px;
+			/* border: 1px solid red; */
+			margin-top: 18px;
+			float: left;
+		}
+		.on{
+			height: 80px;
+			/* border: 1px solid red;  */
+			background-color: #f5f6f7;
+		}	
+		.inner{
+			height: 80px;
+			width: 800px;
+			/* border: 1px solid red;  */
+			margin: 0 auto;
+		}
+		.inner .use{
+			height: 15px;
+			/* background-color: #fff; */
+			font-size: 12px;
+			float: left;
+			padding-top: 20px;
+		}
+		.inner .pay{
+			height: 15px;
+			/* background-color: pink; */
+			margin-left: 135px;
+			font-size: 12px;
+			padding-top: 20px;
+		}
+		.inner .e{
+			height: 20px;
+			font-size: 14px;
+			/* background-color: yellow; */
+			font-weight: bold;
+			float: left;
+			padding-top: 10px;
+			padding-left: 30px;
+		}
+		.inner .double{
+			height: 15px;
+			/* background-color: blue; */
+			font-size: 12px;
+			padding-top: 12px;
+			margin-left: 135px;
+			float: left;
+		}
+		.inner .money{
+			float: left;
+			margin-left: 370px;
+			/* width: 100px;
+			height: 30px; */
+			/* border: 1px solid red; */
+		}
+		.inner .money input{
+			width: 75px;
+			height: 35px;
+			/* border: none; */
+			margin-top: -8px;
+			font-size: 22px;
+			text-align: center;
+			border: none;
+			color: orange;
+			font-weight: bold;
+		}
+		.inner .money span{
+			margin-bottom: 10px;
+		}
+		.middle{
+			height: 650px;
+			/* border: 1px solid red;  */
+			background-color: #f5f5f6;
+		}
+		.middle .across{
+			width: 800px;
+			height: 500px;
+			background-color: #fff;
+			border-top: 2px solid #808080; 
+			border-bottom: 2px solid #808080; 
+			margin: 0 auto;
+		}
+		.middle .scanner{
+			width: 300px;
+			height: 20px;
+			/* border: 1px solid red;  */
+			margin-top: 60px; 
+			margin-left: 100px;
+			float: left;
+		}
+		.middle .scanner span{
+			font-size: 12px;
+			padding-left: 115px;
+		}
+		.middle .wage{
+			width: 75px;
+			height: 35px;
+			/* border: 1px solid red;  */
+			margin-top: 90px;
+			margin-left: 215px;
+			/* margin-left: 215px;
+			margin-top: 5px; */
+		} 
+		.middle .wage input{
+			width: 75px;
+			height: 35px;
+			font-size: 22px;
+			text-align: center;
+			border: none;
+			color: orange;
+			font-weight: bold;
+		} 
+		.middle .across .code{
+			width: 170px;
+			height: 220px;
+			border: 1px solid #808080;
+			/* background-color: pink; */
+			margin-left: 165px;
+			margin-top: 15px;
+		} 
+		.middle .across .code img{
+			width: 170px;
+			height: 220px;
+		}
+		.middle .across a{
+			font-size: 12px;
+			text-decoration: none;
+			padding-left: 40px;
+		}
+		.middle .across a:hover{
+			color: red;
+		}
+		/* 微信支付部分 */
+		.middle .across .w-scanner{
+			width: 302px;
+			height: 20px;
+			/* border: 1px solid red; */
+			float: left;
+			margin-top: -300px;
+			margin-left: 402px; 
+		}
+		.middle .across .w-scanner span{
+			font-size: 12px;
+			padding-left: 115px;
+		}
+		.middle .w-wage{
+			width: 75px;
+			height: 35px;
+			/* border: 1px solid red;  */
+			margin-left: 520px;
+			margin-top: -275px;
+		}
+		.middle .w-wage input{
+			width: 75px;
+			height: 35px;
+			font-size: 22px;
+			text-align: center;
+			border: none;
+			color: orange;
+			font-weight: bold;
+		} 
+		.middle .across .w-code{
+			width: 170px;
+			height: 220px;
+			border: 1px solid #808080;
+			/* background-color: pink; */
+			margin-left: 475px;
+			margin-top: 16px;
+		} 
+		.middle .across .w-code img{
+			width: 170px;
+			height: 220px;
+		}

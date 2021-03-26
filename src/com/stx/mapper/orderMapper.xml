@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace：必须与对应的接口全类名一致
+	id:必须与对应接口的某个对应的方法名一致
+	mybatis 动态sql
+	https://www.w3cschool.cn/mybatis/l5cx1ilz.html
+ -->
+<mapper namespace="com.stx.mapper.OrderMapper">
+
+
+
+	<!-- 
+	<select id="selectOdetail" parameterType="Map" resultType="OdetailEntity">
+		select * from
+		 (select  ROWNUM num,m.* from odetail m where orderid=#{oid}) t 
+		where num> #{start} and num &lt;=#{end} 
+	</select> -->
+	
+
+	<insert id="saveOrder" parameterType="OrdersEntity">
+		insert into orders 
+		values(#{id},#{username},#{address},#{phone},#{zje},#{userid})
+	</insert>
+
+	<insert id="saveOdetail" parameterType="OdetailEntity">
+		insert into odetail 
+		values(#{id},#{orderid},#{title},#{price},#{picpath},#{spsl})
+	</insert>
+	
+	
+	<select id="getCount" parameterType="String" resultType="int">
+		select count(*) from orders where userid=#{uid}
+	</select>
+	<select id="getOrderByUser" parameterType="Map" resultType="OrdersEntity">
+		select * from
+		 (select  ROWNUM num,m.* from orders m where userid=#{uid}) t 
+		where num> #{start} and num &lt;=#{end} 
+		
+	</select>
+	
+	
+	<select id="getDetailCount" parameterType="String" resultType="int">
+		select count(*) from odetail where orderid=#{oid}
+	</select>
+	<select id="getDetailByOrderId"  parameterType="String" resultType="OdetailEntity">
+		select * from odetail where orderid=#{oid}
+	</select>
+	
+	
+	<select id="selectAllCount" resultType="int">
+		select count(*) from orders
+	</select>
+	<select id="selectAll" parameterType="Map" resultType="OrdersEntity">
+		select * from
+		 (select  ROWNUM num,m.* from orders m) t 
+		where num> #{start} and num &lt;=#{end} 
+	</select>
+</mapper>
+
+
+
+
+

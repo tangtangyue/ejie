@@ -1,0 +1,228 @@
+@CHARSET "UTF-8";
+ul{
+		list-style: none;
+	}
+	nav{
+		height: 200px;
+		background-color: pink;
+	}
+	nav .logo{
+		height: 110px;
+		width: 225px;
+		/* background-color: #ffffff; */
+		margin-left: 245px;
+		margin-top: 75px;
+		float: left;
+	}
+	nav .search{
+		width: 350px;
+		height: 41px;
+		/* background-color: #fff; */
+		float: left;
+		margin-left: 100px;
+		margin-top: 100px;
+	}
+	nav .search .wenben{
+		width: 275px;
+		height: 35px;
+		float: left;
+	}
+	nav .search .anniu{
+		width: 71px;
+		height: 41px;
+		float: left;
+	}
+
+	.bg{
+	/* 	border: 1px solid red; */
+	/* 	height: 700px;  */
+		background-color: #f7f9f8;
+		margin:0 auto;
+		margin-top: 20px;
+		/* width: 980px;  */
+	}
+	/* 杩斿洖棣栭〉閮ㄥ垎 */
+	.left-top{
+		height: 40px;
+		background-color: #f7f9f8;
+	}
+	.left-top a{
+		text-decoration: none;
+		line-height: 40px;
+		padding-left: 320px;
+	}
+	.left-top a:hover{
+		color: red;
+	}
+	/* 璐﹀彿绠＄悊閮ㄥ垎 */
+.bg .middle{
+
+background-color: #f7f9f8;
+	} 
+	.aside{
+		width: 200px;
+		height: 200px;
+		background-color: #ffffff; 
+		margin-top: 10px;
+		margin-left: 250px;
+		float: left; 
+	}
+	.aside h3{
+		text-align: center;
+		font-size: 20px;
+		padding-top:10px;
+	}
+	.aside a{
+		text-decoration: none;
+		line-height: 40px;
+		padding-left: 67px;
+	}
+	.aside a:hover{
+		color: red;
+	}
+	/* 鎴戠殑璁㈠崟閮ㄥ垎 */
+	.right{
+		width: 750px;
+		background-color: #ffffff; 
+		float: left; 
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+	.right h2{
+		padding-left: 50px;
+	}
+	/* 璁㈠崟鍟嗗搧閮ㄥ垎 */
+	.right .goods{
+		width: 650px;
+		height: 30px;
+		background-color: #f5f5f5;
+		margin: 0 auto;
+	}
+	.right .goods pre{
+		line-height: 30px;
+		padding-left: 40px;
+	}
+	/* 璁㈠崟缂栧彿閮ㄥ垎 */
+	.right .od{
+		width: 650px;
+		height: 150px;
+		margin: 0 auto;
+		margin-top: 10px;
+		background-color: #f5f5f5;
+		border: 1px solid #f5f5f5;
+	}
+	.right .od .inner-top{
+		width: 650px;
+		height: 30px;
+		background-color: #f6f6f6;
+	}
+	.right .od .inner-top .one{
+		font-size: 14px;
+		line-height: 30px;
+		padding-left: 20px;
+	}
+	.right .od .inner-top .two{
+		font-size: 14px;
+		line-height: 30px;
+		padding-left: 150px;
+	}
+	.right .od .inner-bottom{
+		width: 650px;
+		height: 120px;
+	}
+	.right .od .inner-bottom .pic{
+		width: 300px;
+		height: 120px;
+		background-color: #ffffff; 
+		float: left;
+		margin-left: 1px;
+	}
+	.right .od .inner-bottom .pic .yi{
+		width: 260px;
+		height: 100px;
+		margin: 0 auto;
+		margin-top: 10px;
+		padding-left: 105px;
+	}
+	.right .od .inner-bottom .sum{
+		width: 115px;
+		height: 119px;
+		background-color: #ffffff;
+		float: left;
+		margin-left: 3px;
+	}
+	.right .od .inner-bottom .sum h4{
+		font-weight: normal;
+		text-align: center;
+		line-height: 120px;
+		height: 40px;
+	}
+	.right .od .inner-bottom .state{
+		width: 115px;
+		height: 119px;
+		background-color: #ffffff;
+		float: left;
+		margin-left: 3px;
+	}
+	.right .od .inner-bottom .state h4{
+		font-size: 12px;
+		font-weight: normal;
+		text-align: center;
+		line-height: 120px;
+		height: 70px;
+	}
+	.right .od .inner-bottom .state a{
+		font-size: 12px;
+		font-weight: normal;
+		padding-left: 32px;
+		text-decoration: none;
+	}
+	.right .od .inner-bottom .state a:hover{
+		color: red;
+	}
+	.right .od .inner-bottom .operate{
+		width: 109px;
+		padding-top: 19px;
+		height: 100px; 
+		background-color: #ffffff;
+		float: left; 
+		margin-left: 3px;
+	}
+	
+	.right .od .inner-bottom .operate button{
+		background-color: orange;
+		border-radius: 5px;
+		border: none; 
+		margin-left: 23px;
+		margin-top: 20px;
+	}
+	.right .od .inner-bottom .operate a{
+		text-decoration: none;
+		font-size: 12px;
+		padding-left: 33px;
+		line-height: 40px;
+		height: 40px;
+	}
+	.right .od .inner-bottom .operate a:hover{
+		color:red;
+	}
+	/* 椤垫暟閮ㄥ垎 */
+	.page{
+		height: 50px;
+		/* background-color: pink; */
+		margin-top: 30px;
+	}
+	.page .pp{
+		height: 50px;
+		width: 180px;
+		/* background-color: skyblue; */
+		margin: 0 auto;
+		line-height: 50px; 
+		/* margin-left: 225px; */
+	}
+	.page .pp button{
+		background-color: orange;
+		border: none;
+		border-radius: 10px;
+		margin-left: 5px;
+	}
